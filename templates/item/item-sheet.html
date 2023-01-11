@@ -1,0 +1,56 @@
+{{!-- This template is a fallback for when items don't have more specific templates. --}}
+{{!-- Generally, you'll want to make more specific templates when possible. --}}
+<form class="{{cssClass}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">Description</a>
+    <a class="item" data-tab="attributes">Attributes</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+    </div>
+
+    {{!-- Attributes Tab --}}
+    <div class="tab attributes" data-group="primary" data-tab="attributes">
+      {{!-- As you add new fields, add them in here! --}}
+      <div class="resource flex-group-center">
+          <label for="system.health.value" class="resource-label">Health</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="text" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.power.value" class="resource-label">Power</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.power.value" value="{{system.power.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="text" name="system.power.max" value="{{system.power.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.mana.value" class="resource-label">Mana</label>
+          <div class="resource-content flexrow flex-center flex-between">
+          <input type="text" name="system.mana.value" value="{{system.mana.value}}" data-dtype="Number"/>
+          <span> / </span>
+          <input type="text" name="system.mana.max" value="{{system.mana.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+    </div>
+  </section>
+</form>
