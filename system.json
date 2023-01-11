@@ -27,8 +27,6 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
   "url": "",
-  "manifest": "https://github.com/Baerchen-Studios/baerchen-system/edit/main/system.json",
-  "download": "",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }
