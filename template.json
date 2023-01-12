@@ -8,7 +8,7 @@
           "min": 0,
           "max": 10
         },
-        "power": {
+        "stamina": {
           "value": 5,
           "min": 0,
           "max": 5
@@ -35,7 +35,7 @@
         "dex": {
           "value": 10
         },
-        "con": {
+        "vit": {
           "value": 10
         },
         "int": {
@@ -44,7 +44,7 @@
         "wis": {
           "value": 10
         },
-        "cha": {
+        "end": {
           "value": 10
         }
       }
@@ -62,7 +62,7 @@
       },
       "usage":{
         "health":0,
-        "power":0,
+        "stamina":0,
         "mana":0
       }
     },

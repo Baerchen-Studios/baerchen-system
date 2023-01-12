@@ -1,17 +1,17 @@
 {
   "BAERCHENSYSTEM.AbilityStr": "Strength",
-  "BAERCHENSYSTEM.AbilityCon": "Constitution",
+  "BAERCHENSYSTEM.AbilityVit": "Vitality",
   "BAERCHENSYSTEM.AbilityDex": "Dexterity",
   "BAERCHENSYSTEM.AbilityInt": "Intelligence",
   "BAERCHENSYSTEM.AbilityWis": "Wisdom",
-  "BAERCHENSYSTEM.AbilityCha": "Charisma",
+  "BAERCHENSYSTEM.AbilityEnd": "Endurance",
 
   "BAERCHENSYSTEM.AbilityStrAbbr": "str",
-  "BAERCHENSYSTEM.AbilityConAbbr": "con",
+  "BAERCHENSYSTEM.AbilityVitAbbr": "vit",
   "BAERCHENSYSTEM.AbilityDexAbbr": "dex",
   "BAERCHENSYSTEM.AbilityIntAbbr": "int",
   "BAERCHENSYSTEM.AbilityWisAbbr": "wis",
-  "BAERCHENSYSTEM.AbilityChaAbbr": "cha",
+  "BAERCHENSYSTEM.AbilityEndAbbr": "end",
 
   "BAERCHENSYSTEM.EffectCreate": "Create Effect",
   "BAERCHENSYSTEM.EffectToggle": "Toggle Effect",

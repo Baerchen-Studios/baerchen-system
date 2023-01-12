@@ -7,17 +7,17 @@ export const BAERCHENSYSTEM = {};
  BAERCHENSYSTEM.abilities = {
   "str": "BAERCHENSYSTEM.AbilityStr",
   "dex": "BAERCHENSYSTEM.AbilityDex",
-  "con": "BAERCHENSYSTEM.AbilityCon",
+  "vit": "BAERCHENSYSTEM.AbilityVit",
   "int": "BAERCHENSYSTEM.AbilityInt",
   "wis": "BAERCHENSYSTEM.AbilityWis",
-  "cha": "BAERCHENSYSTEM.AbilityCha"
+  "end": "BAERCHENSYSTEM.AbilityEnd"
 };
 
 BAERCHENSYSTEM.abilityAbbreviations = {
   "str": "BAERCHENSYSTEM.AbilityStrAbbr",
   "dex": "BAERCHENSYSTEM.AbilityDexAbbr",
-  "con": "BAERCHENSYSTEM.AbilityConAbbr",
+  "vit": "BAERCHENSYSTEM.AbilityVitAbbr",
   "int": "BAERCHENSYSTEM.AbilityIntAbbr",
   "wis": "BAERCHENSYSTEM.AbilityWisAbbr",
-  "cha": "BAERCHENSYSTEM.AbilityChaAbbr"
+  "end": "BAERCHENSYSTEM.AbilityEndAbbr"
 };

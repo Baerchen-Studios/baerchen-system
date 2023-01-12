@@ -8,7 +8,7 @@
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
-      <div class="resources grid grid-3col">
+      <div class="resources grid grid-4col">
 
         {{!-- "flex-group-center" is also defined in the _grid.scss file
         and it will add a small amount of padding, a border, and will
@@ -23,11 +23,11 @@
         </div>
 
         <div class="resource flex-group-center">
-          <label for="system.power.value" class="resource-label">Power</label>
+          <label for="system.stamina.value" class="resource-label">Stamina</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.power.value" value="{{system.power.value}}" data-dtype="Number"/>
+          <input type="text" name="system.stamina.value" value="{{system.stamina.value}}" data-dtype="Number"/>
           <span> / </span>
-          <input type="text" name="system.power.max" value="{{system.power.max}}" data-dtype="Number"/>
+          <input type="text" name="system.stamina.max" value="{{system.stamina.max}}" data-dtype="Number"/>
           </div>
         </div>
 
@@ -86,7 +86,7 @@
         {{!-- For the main features list, span the right two columns --}}
         <section class="main grid-span-2">
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
-          {{> "systems/baerchen-system/templates/actor/parts/actor-features.html"}}
+          {{> "systems/baerchensystem/templates/actor/parts/actor-features.html"}}
         </section>
 
       </section>
@@ -100,17 +100,17 @@
 
     {{!-- Owned Items Tab --}}
     <div class="tab items" data-group="primary" data-tab="items">
-       {{> "systems/baerchen-system/templates/actor/parts/actor-items.html"}}
+       {{> "systems/baerchensystem/templates/actor/parts/actor-items.html"}}
     </div>
 
     {{!-- Owned Spells Tab --}}
     <div class="tab spells" data-group="primary" data-tab="spells">
-      {{> "systems/baerchen-system/templates/actor/parts/actor-spells.html"}}
+      {{> "systems/baerchensystem/templates/actor/parts/actor-spells.html"}}
     </div>
 
     {{!-- Active Effects Tab --}}
     <div class="tab effects flexcol" data-group="primary" data-tab="effects">
-      {{> "systems/baerchen-system/templates/actor/parts/actor-effects.html"}}
+      {{> "systems/baerchensystem/templates/actor/parts/actor-effects.html"}}
     </div>
 
   </section>

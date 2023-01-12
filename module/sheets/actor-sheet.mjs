@@ -9,8 +9,8 @@ export class BaerchenSystemActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["baerchen-system", "sheet", "actor"],
-      template: "systems/baerchen-system/templates/actor/actor-sheet.html",
+      classes: ["baerchensystem", "sheet", "actor"],
+      template: "systems/baerchensystem/templates/actor/actor-sheet.html",
       width: 600,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
@@ -19,7 +19,7 @@ export class BaerchenSystemActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/baerchen-system/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/baerchensystem/templates/actor/actor-${this.actor.type}-sheet.html`;
   }
 
   /* -------------------------------------------- */

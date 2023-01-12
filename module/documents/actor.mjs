@@ -31,7 +31,7 @@ export class BaerchenSystemActor extends Actor {
   prepareDerivedData() {
     const actorData = this;
     const systemData = actorData.system;
-    const flags = actorData.flags.baerchen-system || {};
+    const flags = actorData.flags.baerchensystem || {};
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.
