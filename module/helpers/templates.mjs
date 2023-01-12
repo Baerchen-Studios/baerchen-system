@@ -7,9 +7,9 @@
   return loadTemplates([
 
     // Actor partials.
-    "systems/baerchensystem/templates/actor/parts/actor-features.html",
-    "systems/baerchensystem/templates/actor/parts/actor-items.html",
-    "systems/baerchensystem/templates/actor/parts/actor-spells.html",
-    "systems/baerchensystem/templates/actor/parts/actor-effects.html",
+    "systems/baerchen-system/templates/actor/parts/actor-features.html",
+    "systems/baerchen-system/templates/actor/parts/actor-items.html",
+    "systems/baerchen-system/templates/actor/parts/actor-spells.html",
+    "systems/baerchen-system/templates/actor/parts/actor-effects.html",
   ]);
 };

@@ -16,7 +16,7 @@ Hooks.once('init', async function() {
 
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
-  game.baerchensystem = {
+  game.baerchen-system = {
     BaerchenSystemActor,
     BaerchenSystemItem,
     rollItemMacro
@@ -40,9 +40,9 @@ Hooks.once('init', async function() {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("baerchensystem", BaerchenSystemActorSheet, { makeDefault: true });
+  Actors.registerSheet("baerchen-system", BaerchenSystemActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("baerchensystem", BaerchenSystemItemSheet, { makeDefault: true });
+  Items.registerSheet("baerchen-system", BaerchenSystemItemSheet, { makeDefault: true });
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
@@ -97,7 +97,7 @@ async function createItemMacro(data, slot) {
   const item = await Item.fromDropData(data);
 
   // Create the macro command using the uuid.
-  const command = `game.baerchensystem.rollItemMacro("${data.uuid}");`;
+  const command = `game.baerchen-system.rollItemMacro("${data.uuid}");`;
   let macro = game.macros.find(m => (m.name === item.name) && (m.command === command));
   if (!macro) {
     macro = await Macro.create({
@@ -105,7 +105,7 @@ async function createItemMacro(data, slot) {
       type: "script",
       img: item.img,
       command: command,
-      flags: { "baerchensystem.itemMacro": true }
+      flags: { "baerchen-system.itemMacro": true }
     });
   }
   game.user.assignHotbarMacro(macro, slot);

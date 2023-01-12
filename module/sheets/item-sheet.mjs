@@ -7,7 +7,7 @@ export class BaerchenSystemItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["baerchensystem", "sheet", "item"],
+      classes: ["baerchen-system", "sheet", "item"],
       width: 520,
       height: 480,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
@@ -16,7 +16,7 @@ export class BaerchenSystemItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/baerchensystem/templates/item";
+    const path = "systems/baerchen-system/templates/item";
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.html`;
 

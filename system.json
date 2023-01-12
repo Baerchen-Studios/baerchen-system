@@ -1,5 +1,5 @@
 {
-  "id": "baerchen-system-main",
+  "id": "baerchen-system",
   "title": "BaerchenSystem",
   "description": "The BaerchenSystem system for FoundryVTT!",
   "version": "0.0.1",
@@ -11,8 +11,8 @@
   "authors": [{
     "name": "Baerchen"
   }],
-  "esmodules": ["module/baerchensystem.mjs"],
-  "styles": ["css/baerchensystem.css"],
+  "esmodules": ["module/baerchen-system.mjs"],
+  "styles": ["css/baerchen-system.css"],
   "scripts": [],
   "packs": [],
   "languages": [
