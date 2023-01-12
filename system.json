@@ -26,7 +26,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
   "license": "LICENSE.txt",
-  "changelog": "CHANGELOG.md"
+  "changelog": "CHANGELOG.md",
+  "url" : "https://github.com/Baerchen-Studios/baerchen-system",
+  "manifest": "https://github.com/Baerchen-Studios/baerchen-system/blob/main/system.json"
 }
